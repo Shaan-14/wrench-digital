@@ -11,7 +11,7 @@ exports.handler = async function(event) {
 
   try {
     await resend.emails.send({
-      from: 'Wrench Digital <info@wrenchdigital.ca>',
+      from: 'New Quote Request <info@wrenchdigital.ca>',
       to: 'shaan.wrench14@gmail.com',
       replyTo: data.email,
       subject: `New Quote Request — ${data.business || data.name}`,

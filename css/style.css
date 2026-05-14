@@ -1657,3 +1657,13 @@ footer {
   top: 16px;
   right: 16px;
 }
+
+.ongoing-grid-three {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 960px) {
+  .ongoing-grid-three {
+    grid-template-columns: 1fr;
+  }
+}
