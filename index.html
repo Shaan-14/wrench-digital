@@ -730,70 +730,69 @@
           <strong>✓ Message sent!</strong><br>I'll be in touch within 24–48 hours with your quote.
         </div>
         <form class="contact-form" id="contactForm" action="https://formspree.io/f/xkoyavqa" method="POST">
-          <input type="hidden" name="_next" value="https://wrenchdigital.ca">
-          <input type="text" name="_gotcha" style="display:none">
-          <div class="form-row">
-            <div class="form-group">
-              <label>Your Name *</label>
-              <input type="text" placeholder="Jane Smith" required>
-            </div>
-            <div class="form-group">
-              <label>Business Name</label>
-              <input type="text" placeholder="Smith Plumbing Co.">
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label>Email *</label>
-              <input type="email" placeholder="jane@yourbusiness.com" required>
-            </div>
-            <div class="form-group">
-              <label>Phone</label>
-              <input type="tel" placeholder="647-000-0000">
-            </div>
-          </div>
-          <div class="form-group">
-            <label>Type of Business *</label>
-            <select required>
-              <option value="" disabled selected>Select your industry...</option>
-              <option>Restaurant / Café / Food</option>
-              <option>Gym / Fitness / Wellness</option>
-              <option>Trades (Plumbing, HVAC, Electrical, etc.)</option>
-              <option>Medical / Dental / Clinic</option>
-              <option>Retail / E-Commerce</option>
-              <option>Manufacturing / Industrial</option>
-              <option>Professional Services</option>
-              <option>Real Estate</option>
-              <option>Other</option>
-            </select>
-          </div>
-         <div class="form-group">
-  <label>Package</label>
-  <select>
-    <option value="" disabled selected>Select a package...</option>
-    <option>Basic — $699 (3–4 pages)</option>
-    <option>Standard — $899 (5–6 pages)</option>
-    <option>Premium — $1,499 (full site)</option>
-    <option>Not sure — I need a recommendation</option>
-  </select>
-</div>
-
-<div class="form-group">
-  <label>Ongoing Services</label>
-  <select>
-    <option value="" disabled selected>Select an option...</option>
-    <option>Full Maintenance — $85/month (domain + hosting + updates + support)</option>
-    <option>Domain Management only — $10/month</option>
-    <option>Not sure yet — tell me more</option>
-  </select>
-</div>
-          <div class="form-group">
-            <label>Tell me about your project</label>
-            <textarea placeholder="What does your business do? Do you have an existing website? Any specific features you need?"></textarea>
-          </div>
-          <button type="submit" class="btn-submit">Send Message & Get Quote →</button>
-          <p class="form-note">I respond within 24–48 hours · No spam, ever</p>
-        </form>
+  <input type="hidden" name="_next" value="https://deluxe-chebakia-05a2cd.netlify.app">
+  <input type="text" name="_gotcha" style="display:none">
+  <div class="form-row">
+    <div class="form-group">
+      <label>Your Name *</label>
+      <input type="text" name="name" placeholder="Jane Smith" required>
+    </div>
+    <div class="form-group">
+      <label>Business Name</label>
+      <input type="text" name="business" placeholder="Smith Plumbing Co.">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group">
+      <label>Email *</label>
+      <input type="email" name="email" placeholder="jane@yourbusiness.com" required>
+    </div>
+    <div class="form-group">
+      <label>Phone</label>
+      <input type="tel" name="phone" placeholder="647-000-0000">
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Type of Business *</label>
+    <select name="industry" required>
+      <option value="" disabled selected>Select your industry...</option>
+      <option>Restaurant / Café / Food</option>
+      <option>Gym / Fitness / Wellness</option>
+      <option>Trades (Plumbing, HVAC, Electrical, etc.)</option>
+      <option>Medical / Dental / Clinic</option>
+      <option>Retail / E-Commerce</option>
+      <option>Manufacturing / Industrial</option>
+      <option>Professional Services</option>
+      <option>Real Estate</option>
+      <option>Other</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label>Package</label>
+    <select name="package">
+      <option value="" disabled selected>Select a package...</option>
+      <option>Basic — $699 (3–4 pages)</option>
+      <option>Standard — $899 (5–6 pages)</option>
+      <option>Premium — $1,499 (full site)</option>
+      <option>Not sure — I need a recommendation</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label>Ongoing Services</label>
+    <select name="ongoing_services">
+      <option value="" disabled selected>Select an option...</option>
+      <option>Full Maintenance — $85/month (domain + hosting + updates + support)</option>
+      <option>Domain Management only — $10/month</option>
+      <option>Not sure yet — tell me more</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label>Tell me about your project</label>
+    <textarea name="message" placeholder="What does your business do? Do you have an existing website? Any specific features you need?"></textarea>
+  </div>
+  <button type="submit" class="btn-submit">Send Message & Get Quote →</button>
+  <p class="form-note">I respond within 24–48 hours · No spam, ever</p>
+</form>
       </div>
     </div>
   </div>
