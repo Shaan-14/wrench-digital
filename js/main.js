@@ -1,14 +1,10 @@
 // Page navigation
 function showPage(pageId) {
-  // Hide all pages
   document.querySelectorAll('.page-section').forEach(p => p.classList.remove('active'));
-  // Show target
   document.getElementById('page-' + pageId).classList.add('active');
-  // Update nav active state
   document.querySelectorAll('.nav-link').forEach(l => {
     l.classList.toggle('active', l.dataset.page === pageId);
   });
-  // Scroll to top
   window.scrollTo({ top: 0, behavior: 'smooth' });
   return false;
 }
@@ -16,23 +12,33 @@ function showPage(pageId) {
 document.getElementById('contactForm').addEventListener('submit', async function(e) {
   e.preventDefault();
   const form = e.target;
-  const data = new FormData(form);
   
+  const data = {
+    name: form.querySelector('[name="name"]').value,
+    business: form.querySelector('[name="business"]').value,
+    email: form.querySelector('[name="email"]').value,
+    phone: form.querySelector('[name="phone"]').value,
+    industry: form.querySelector('[name="industry"]').value,
+    package: form.querySelector('[name="package"]').value,
+    ongoing_services: form.querySelector('[name="ongoing_services"]').value,
+    message: form.querySelector('[name="message"]').value,
+  };
+
   try {
-    const response = await fetch('https://formspree.io/f/xkoyavqa', {
+    const response = await fetch('/.netlify/functions/contact', {
       method: 'POST',
-      body: data,
-      headers: { 'Accept': 'application/json' }
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
     });
-    
+
     if (response.ok) {
       form.style.display = 'none';
       document.getElementById('successMsg').style.display = 'block';
       window.scrollTo(0, 0);
     } else {
-      alert('Something went wrong. Please email me directly at shaan.wrench14@gmail.com');
+      alert('Something went wrong. Please email me at shaan.wrench14@gmail.com');
     }
   } catch (error) {
-    alert('Something went wrong. Please email me directly at shaan.wrench14@gmail.com');
+    alert('Something went wrong. Please email me at shaan.wrench14@gmail.com');
   }
 });

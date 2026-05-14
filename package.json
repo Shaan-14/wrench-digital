@@ -1,0 +1,24 @@
+{
+  "name": "wrench-digital",
+  "version": "1.0.0",
+  "description": "Professional web design services for small and medium businesses across Mississauga and the GTA.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shaan-14/wrench-digital.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Shaan-14/wrench-digital/issues"
+  },
+  "homepage": "https://github.com/Shaan-14/wrench-digital#readme",
+  "dependencies": {
+    "resend": "^6.12.3"
+  }
+}
