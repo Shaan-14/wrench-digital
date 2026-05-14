@@ -12,10 +12,3 @@ function showPage(pageId) {
   window.scrollTo({ top: 0, behavior: 'smooth' });
   return false;
 }
-
-// Form submit
-function handleSubmit(e) {
-  e.preventDefault();
-  document.getElementById('contactForm').style.display = 'none';
-  document.getElementById('successMsg').style.display = 'block';
-}
