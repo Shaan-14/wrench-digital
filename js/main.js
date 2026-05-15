@@ -42,3 +42,15 @@ document.getElementById('contactForm').addEventListener('submit', async function
     alert('Something went wrong. Please email me at shaan.wrench14@gmail.com');
   }
 });
+
+function toggleNav() {
+  const nav = document.getElementById('navLinks');
+  const burger = document.getElementById('navHamburger');
+  nav.classList.toggle('nav-open');
+  burger.classList.toggle('nav-burger-open');
+}
+
+function closeNav() {
+  document.getElementById('navLinks').classList.remove('nav-open');
+  document.getElementById('navHamburger').classList.remove('nav-burger-open');
+}

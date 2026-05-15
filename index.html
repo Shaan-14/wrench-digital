@@ -16,14 +16,20 @@
 <nav id="navbar">
   <div class="nav-inner">
     <a href="#" class="nav-logo" onclick="showPage('home')">Wrench<span>Digital</span></a>
-    <ul class="nav-links">
-      <li><a href="#" onclick="showPage('home')" class="nav-link active" data-page="home">Home</a></li>
-      <li><a href="#" onclick="showPage('services')" class="nav-link" data-page="services">Services</a></li>
-      <li><a href="#" onclick="showPage('work')" class="nav-link" data-page="work">Work</a></li>
-      <li><a href="#" onclick="showPage('pricing')" class="nav-link" data-page="pricing">Pricing</a></li>
-      <li><a href="#" onclick="showPage('about')" class="nav-link" data-page="about">About</a></li>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#" onclick="showPage('home'); closeNav()" class="nav-link active" data-page="home">Home</a></li>
+      <li><a href="#" onclick="showPage('services'); closeNav()" class="nav-link" data-page="services">Services</a></li>
+      <li><a href="#" onclick="showPage('work'); closeNav()" class="nav-link" data-page="work">Work</a></li>
+      <li><a href="#" onclick="showPage('pricing'); closeNav()" class="nav-link" data-page="pricing">Pricing</a></li>
+      <li><a href="#" onclick="showPage('about'); closeNav()" class="nav-link" data-page="about">About</a></li>
+      <li><a href="#" onclick="showPage('contact'); closeNav()" class="nav-link nav-link-mobile-cta" data-page="contact">Get a Quote</a></li>
     </ul>
-    <a href="#" onclick="showPage('contact')" class="nav-cta">Get a Quote</a>
+    <a href="#" onclick="showPage('contact')" class="nav-cta nav-cta-desktop">Get a Quote</a>
+    <button class="nav-hamburger" id="navHamburger" onclick="toggleNav()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </div>
 </nav>
 
